@@ -1,0 +1,1185 @@
+@font-face {
+  font-family: LibreBaskerville;
+  src: url(./fonts/LibreBaskerville-Regular.ttf);
+}
+
+@keyframes fadeInRight {
+
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: LibreBaskerville;
+}
+
+.hero-section {
+  height: 100vh;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  background: #4ea3f8;
+  color: rgb(20, 20, 20);
+  padding: 30px 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-items,
+.overview,
+.account {
+  display: flex;
+}
+
+.overview {
+  margin-right: 0%;
+  height: 40px;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  margin: 0 4rem;
+}
+
+#navbar__logo img {
+  height: 60px;
+}
+
+nav li {
+  list-style: none;
+  padding: .75rem 0.5rem;
+  margin: 0 .5rem;
+
+
+}
+
+nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: LibreBaskerville;
+  text-decoration: none;
+  color: white;
+}
+
+.inactive::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: white;
+  width: 0%;
+  transition: all ease-in-out 300ms;
+}
+
+.inactive:hover::after {
+  width: 100%;
+}
+
+.active {
+  border-radius: 5px;
+  color: #4ea3f8;
+  background-color: white;
+  text-decoration: none;
+  cursor: default;
+}
+
+.donate-button {
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.dropdown {
+  visibility: hidden;
+
+  .dropdown__active {
+    visibility: hidden;
+  }
+
+  .dropdown__inactive {
+    visibility: hidden;
+  }
+}
+
+
+#indexheader {
+  background: url('./HappyDogSurfShopPics/homebanner.JPG') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4em 1em;
+  text-align: center;
+  font-size: 1vw;
+}
+
+header p {
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+
+#indexheader img {
+  z-index: -1;
+  max-width: 400px;
+  width: 50%;
+  max-height: 200px;
+  margin-top: 20px;
+}
+
+.container {
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ede6e6;
+
+  section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding: 0px 0;
+    align-items: center;
+  }
+
+  .shop__text {
+    margin-bottom: 0;
+  }
+
+  .img__left {
+    max-width: 300px;
+    width: 100%;
+    padding-right: 20px;
+    border-radius: 15px;
+    display: flex;
+  }
+
+  .img__right {
+    max-width: 300px;
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 15px;
+    display: flex;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+
+    #full__text {
+      color: #4ea3f8;
+      -webkit-text-stroke: 0px;
+    }
+
+    h2 {
+      color: #4ea3f8;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 1;
+      font-family: serif;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.7rem;
+      color: #4ea3f8;
+      font-family: Montserrat, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+      font-weight: 200;
+    }
+
+  }
+
+}
+
+.main__section {
+  margin-top: 50px;
+}
+
+.grid__container {
+  display: grid;
+  grid: auto/ 1fr 1fr 1fr 1fr;
+  height: auto;
+  row-gap: 10px;
+  column-gap: 30px;
+}
+
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+
+  .card {
+    max-width: 24vh;
+    width: 36vw;
+    height: 36vh;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: #ffffffde;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+    video {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 1;
+    }
+
+    h2 {
+      position: absolute;
+      inset: auto auto 30px 10px;
+      margin: 0;
+      transition: inset .3s .3s ease-out;
+      /* font-family: 'Roboto Condensed', sans-serif; */
+      font-weight: normal;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    p,
+    .shopnow {
+      position: absolute;
+      opacity: 0;
+      max-width: 80%;
+      transition: opacity .3s ease-out;
+      color: white;
+    }
+
+    p {
+      inset: auto auto 60px 30px;
+    }
+
+    .shopnow {
+      inset: auto auto 40px 30px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &:hover h2 {
+      inset: auto auto 50% 10%;
+      transition: inset .3s ease-out;
+
+      .hat {
+        inset: auto auto 80% 30px;
+        transition: inset .3s ease-out;
+      }
+
+    }
+
+    &:hover p,
+    &:hover .shopnow {
+      opacity: 1;
+      transition: opacity .5s .1s ease-in;
+    }
+
+    &:hover img {
+      transition: opacity .3s ease-in;
+      opacity: 1;
+    }
+  }
+}
+
+
+
+.main__display {
+  height: 100vh
+}
+
+.picture__display {
+  display: flex;
+  width: calc(45%);
+  height: 600px;
+  flex-direction: row;
+  gap: 16px;
+  top: 40px;
+  padding-left: 48px;
+  margin-left: 8px;
+  max-height: 669px;
+  min-height: 455px;
+  z-index: -1;
+  margin-left: 200px;
+
+  .picture {
+    width: auto;
+    height: auto;
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    background-color: beige;
+    z-index: -1;
+    border-radius: 15px;
+  }
+
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+
+
+  .thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .thumbnails img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .scrollbar {
+    width: 0px;
+    height: auto;
+    background: #ccc;
+    display: block;
+    margin: 0 0 0 8px;
+  }
+
+  .slides {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    width: calc(75px + 1rem);
+    padding: 0 0.25rem;
+    height: auto;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+  }
+
+  .slides>div {
+    scroll-snap-align: start;
+  }
+
+  .slides img {
+    border-radius: 15px;
+    background-color: beige;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+  }
+
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+#board__header h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #4ea3f8;
+}
+
+.team__container {
+  height: auto;
+  width: 100%;
+  max-height: 800px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 0;
+  flex-direction: row;
+
+  .border {
+    height: 29vw;
+    width: 29vw;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+
+    &:hover {
+      border: 1px solid white;
+    }
+
+    h2 {
+      opacity: 1;
+    }
+
+  }
+
+  .card {
+    height: 30vw;
+    width: 30vw;
+    background: grey;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: black;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .card0 {
+    background: url('./HappyDogSurfShopPics/brandon.jpg') center center no-repeat;
+    background-size: 30vw;
+
+    &:hover {
+
+      h2 {
+        opacity: 1;
+      }
+
+      h3 {
+        opacity: 1;
+      }
+
+      h4 {
+        opacity: 1;
+      }
+
+      .fa {
+        opacity: 1;
+      }
+    }
+  }
+
+  .card1 {
+    background: url('./HappyDogSurfShopPics/aidan.jpg') center center no-repeat;
+    background-size: 30vw;
+
+    &:hover {
+
+      h2 {
+        opacity: 1;
+      }
+
+      h3 {
+        opacity: 1;
+      }
+
+      h4 {
+        opacity: 1;
+      }
+
+      .fa {
+        opacity: 1;
+      }
+    }
+  }
+
+  .card2 {
+    background: url('./HappyDogSurfShopPics/kevin.jpg') center center no-repeat;
+    background-size: 30vw;
+
+    &:hover {
+
+      h2 {
+        opacity: 1;
+      }
+
+      h3 {
+        opacity: 1;
+      }
+
+      h4 {
+        opacity: 1;
+      }
+
+      .fa {
+        opacity: 1;
+      }
+    }
+  }
+
+  .card3 {
+    background: url('./HappyDogSurfShopPics/alan.jpg') center center no-repeat;
+    background-size: 30vw;
+
+    &:hover {
+
+      h2 {
+        opacity: 1;
+      }
+
+      h3 {
+        opacity: 1;
+      }
+
+      h4 {
+        opacity: 1;
+      }
+
+      .fa {
+        opacity: 1;
+      }
+    }
+  }
+
+  .card4 {
+    background: url('./HappyDogSurfShopPics/jaithan.jpg') center center no-repeat;
+    background-size: 30vw;
+
+    &:hover {
+
+      h2 {
+        opacity: 1;
+      }
+
+      h3 {
+        opacity: 1;
+      }
+
+      h4 {
+        opacity: 1;
+      }
+
+      .fa {
+        opacity: 1;
+      }
+    }
+  }
+
+  .card5 {
+    background: url('./HappyDogSurfShopPics/griffin.jpg') center center no-repeat;
+    background-size: 30vw;
+
+    &:hover {
+
+      h2 {
+        opacity: 1;
+      }
+
+      h3 {
+        opacity: 1;
+      }
+
+      h4 {
+        opacity: 1;
+      }
+
+      .fa {
+        opacity: 1;
+      }
+    }
+  }
+
+  h2 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 60px;
+    line-height: 15px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .fa {
+    opacity: 0;
+    transition: opacity 1s;
+    font-size: 1.5vw;
+    color: white;
+  }
+
+  .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 60%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+}
+
+#sponsorheader {
+  background-image: url('./HappyDogSurfShopPics/sponsorbackground.jpg');
+  background-size: cover;
+  color: white;
+  padding: 5em 1em;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+
+  img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 5px;
+  }
+}
+
+.about {
+  text-align: center;
+}
+
+.container__sponsor {
+  box-shadow: 5px 5px 5px 5px #777;
+  padding: 0.1rem 15px;
+  margin: 3vw 5vw;
+  background-color: #ede6e6;
+  width: 90%;
+  height: auto;
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: #4ea3f8;
+  }
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.footer__container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #4ea3f8;
+  padding: 70px 0;
+}
+
+.footer-col {
+  font-weight: lighter;
+  width: 25%;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #4ea3f8;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1080px) {
+
+  * {
+    max-width: 1080px;
+    width: auto;
+  }
+
+  .nav-items {
+    visibility: hidden;
+    width: 0px;
+
+    .overview {
+      width: inherit;
+    }
+  }
+
+  nav li {
+    visibility: hidden;
+
+    .dropbtn {
+      opacity: .7;
+      color: white;
+      font-size: 20px;
+      background-color: inherit;
+      border-width: 0;
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      visibility: visible;
+      display: flex;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.4);
+        transition-duration: .3s;
+      }
+
+
+    }
+  }
+
+  .active {
+    display: none;
+  }
+
+  .inactive {
+    display: none;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #4ea3f8;
+    margin: 0 0;
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        height: calc(90%/6);
+        min-height: 50px;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+
+        a {
+          display: block;
+          position: relative;
+          color: #fff;
+          text-decoration: none;
+          overflow: hidden;
+          visibility: visible;
+          opacity: 0.7;
+          transform: scale(1);
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+
+  .grid__container {
+    grid: auto/ 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 0;
+
+    .card {
+      max-width: 24vw;
+    }
+  }
+
+  .team__container {
+    .card {
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        margin-right: 30px;
+      }
+
+      h4 {
+        margin-right: 30px;
+      }
+
+      .icons {
+        flex-direction: row;
+        width: 150px;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  * {
+    max-width: 768px;
+    width: auto;
+  }
+
+  .nav-items {
+    visibility: hidden;
+    width: 0px;
+
+    .overview {
+      width: inherit;
+    }
+  }
+
+  nav li {
+    visibility: hidden;
+
+    .dropbtn {
+      opacity: .7;
+      color: white;
+      font-size: 20px;
+      background-color: inherit;
+      border-width: 0;
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      visibility: visible;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+        transform: scale(1.4);
+        transition-duration: .3s;
+      }
+
+
+    }
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #4ea3f8;
+    margin: 0 0;
+
+    &.open {
+      opacity: 1;
+      visibility: visible;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        height: calc(90%/6);
+        min-height: 50px;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+
+        a {
+          display: block;
+          position: relative;
+          color: #fff;
+          text-decoration: none;
+          overflow: hidden;
+          visibility: visible;
+          opacity: 0.7;
+          transform: scale(1);
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+
+  .container {
+
+    padding: 50px 100px;
+
+    section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .img__left {
+        padding: 0;
+      }
+
+      .img__right {
+        padding: 0;
+      }
+    }
+
+    .grid__container {
+      grid: auto/ 1fr 1fr;
+      column-gap: 100px;
+      row-gap: 0;
+
+      .card {
+        max-width: 36vw;
+      }
+
+    }
+  }
+
+  .team__container {
+    .card {
+
+      h2 {
+        font-size: 15px;
+      }
+
+      h3 {
+        font-size: 9px;
+        margin-right: 30px;
+      }
+
+      h4 {
+        font-size: 7px;
+        margin-right: 30px;
+      }
+
+      .icons {
+        flex-direction: row;
+        width: 100px;
+      }
+
+    }
+  }
+
+  .container__sponsor {
+    .container {
+
+      padding: 50px 50px;
+
+      .text {
+        h2 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.4rem;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 50px;
+
+    section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .text {
+        h2 {
+          text-align: center;
+          font-size: 40px;
+        }
+
+        p {
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+
+
+
+      .img__left {
+        padding: 0;
+      }
+
+      .img__right {
+        padding: 0;
+      }
+    }
+
+    .grid__container {
+      grid: auto/ 1fr;
+      column-gap: 100px;
+      row-gap: 0;
+
+      .card {
+        max-width: 36vw;
+      }
+
+    }
+  }
+
+  .team__container {
+    flex-direction: column;
+    row-gap: 50px;
+
+    .card0 {
+      background-size: 60vw;
+    }
+
+    .card1 {
+      background-size: 60vw;
+    }
+
+    .card2 {
+      background-size: 60vw;
+    }
+
+    .card3 {
+      background-size: 60vw;
+    }
+
+    .card4 {
+      background-size: 60vw;
+    }
+
+    .card5 {
+       background-size: 60vw;
+    }
+
+    .border{
+      height: 58vw;
+      width: 58vw;
+    }
+
+    .card {
+      width: 60vw;
+      height: 60vw;
+
+      h2 {
+        font-size: 17px;
+      }
+
+      h3 {
+        font-size: 12px;
+        line-height: 15px;
+        margin-right: 30px;
+      }
+
+      h4 {
+        font-size: 10px;
+        margin-right: 30px;
+      }
+
+      .icons {
+        width: 50px;
+      }
+    }
+    .fa{
+      font-size: 5vw;
+    }
+  }
+
+  .container__sponsor {
+    .container {
+
+      padding: 50px 50px;
+
+      .text {
+        h2 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.4rem;
+        }
+      }
+    }
+  }
+}

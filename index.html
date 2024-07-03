@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Dog Surf Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function toggleMenu() {
+            var dropdown = document.querySelector('.dropdown');
+            var dropdownContainer = document.querySelector('#toggle')
+            dropdown.classList.toggle('open');
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" id="navbar__logo">
+                <img src="./HappyDogSurfShopPics/navpic.png" alt="">
+            </a>
+        </div>
+        <div class="nav-items">
+            <ul class="overview">
+                <div class="overlay-menu" id="toggle">
+                    <li><button class="dropbtn" onclick="toggleMenu()"><i class="fa fa-bars"
+                                aria-hidden="true"></button></i>
+                        <ul class="dropdown">
+                            <li class="dropdown__active dropdown__item"><a class="dropdown__active"
+                                    href="index.html">Home</a></li>
+                            <li class="dropdown__inactive dropdown__item"><a href="team.html">Board</a></li>
+                            <li class="dropdown__inactive dropdown__item"><a href="sponsors.html">Partners</a></li>
+                            <li class="dropdown__inactive dropdown__item"><a
+                                    href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer="
+                                    target="_blank">Shop</a></li>
+                            <li><a href="https://gofund.me/4e814aa8" target="_blank" class="donate-button">Donate</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <li class="active"><a class="active" href="index.html">Home</a></li>
+                <li class="inactive"><a href="team.html">Board</a></li>
+                <li class="inactive"><a href="sponsors.html">Partners</a></li>
+                <li class="inactive"><a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer="
+                        target="_blank">Shop</a></li>
+                <li class="inactive"><a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/"
+                        target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="inactive"><a href="https://www.instagram.com/happydogsurfshop/" target="_blank"><i
+                            class="fa fa-instagram"></i></a></li>
+                <li class="inactive"><a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/"
+                        target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li class="inactive"><a href="https://gofund.me/4e814aa8" target="_blank"
+                        class="donate-button">Donate</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <header id="indexheader" class="animate-on-scroll fadeIn">
+        <img src="./HappyDogSurfShopPics/pic 2copy.png" alt="Happy Dogs Surf Shop" class="animate-on-scroll bounceIn">
+        <p>Supporting Dogs with Every Purchase</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <img class="img__left" src="./HappyDogSurfShopPics/missionstatmentpic.jpg" alt="Happy Dogs Surf Shop">
+            <div class="text">
+                <h2>Our Mission</h2>
+                <p>Happy Dogs Surf Shop is a local organization led by local Long Island college students founded in
+                    2024.
+                    Our goal is to support local animal shelters by funding additional food and medical care and
+                    sponsoring
+                    animal-related events. We offer a variety of high-quality t-shirts and hoodies, with designs that
+                    pay
+                    homage to the joy and spirit of fun-loving dogs. With a mission to make a difference, the shop not
+                    only
+                    sells clothing but also raises awareness about the importance of animal rescue and adoption. Whether
+                    you're a surfer, a dog lover, or simply someone who appreciates a good cause, Happy Dogs Surf Shop
+                    invites you to ride the wave of compassion and make a positive impact in the lives of dogs
+                    everywhere.
+                </p>
+            </div>
+        </section>
+
+        <section class="shop__text">
+            <div class="text">
+                <h2>Shop</h2>
+            </div>
+        </section>
+
+        <div class="grid__container">
+            <div class="grid__item">
+                <a class="link__shit" href="https://www.etsy.com/listing/1738172544/coastal-classic-double-sided-tee"
+                    target="_blank">
+                    <div class="card">
+                        <video poster="./HappyDogSurfShopPics/CCDouble.jpg" autoplay muted playsinline loop>
+                            <source src="./HappyDogSurfShopPics/CCDouble.mp4" type="video/mp4">
+                            </source>
+                        </video>
+                        <div class="card-content">
+                            <h2>
+                                Coastal Classic Double-Sided Tee
+                            </h2>
+                            <p>
+                                24.99$
+                            </p>
+                            <a class="shopnow"
+                                href="https://www.etsy.com/listing/1738172544/coastal-classic-double-sided-tee"
+                                target="_blank" class="button">
+                                Shop Now
+                                <span class="material-symbols-outlined">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid__item">
+                <a class="link__shit" href="https://www.etsy.com/listing/1752365173/running-wild-blue-tee"
+                    target="_blank">
+                    <div class="card">
+                        <video poster="./HappyDogSurfShopPics/RWDouble.jpg" autoplay muted playsinline loop>
+                            <source src="./HappyDogSurfShopPics/RWDouble.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-content">
+                            <h2>
+                                Running Wild Double-Sided Tee
+                            </h2>
+                            <p>
+                                24.99$
+                            </p>
+                            <a class="shopnow" href="https://www.etsy.com/listing/1752365173/running-wild-blue-tee"
+                                target="_blank" class="button">
+                                Shop Now
+                                <span class="material-symbols-outlined">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="link__shit" href="https://www.etsy.com/listing/1752365579/coastal-classic-single-sided-tee"
+                    target="_blank">
+                    <div class="card">
+                        <video poster="./HappyDogSurfShopPics/CCSingle.jpg" autoplay muted playsinline loop>
+                            <source src="./HappyDogSurfShopPics/CCSingle.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-content">
+                            <h2>
+                                Coastal Classic Single-Sided Tee
+                            </h2>
+                            <p>
+                                17.99$
+                            </p>
+                            <a class="shopnow"
+                                href="https://www.etsy.com/listing/1752365579/coastal-classic-single-sided-tee"
+                                target="_blank" class="button">
+                                Shop Now
+                                <span class="material-symbols-outlined">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="grid__item">
+                <a class="link__shit" href="https://www.etsy.com/listing/1752365395/running-wild-hat" target="_blank">
+                    <div class="card">
+                        <video poster="./HappyDogSurfShopPics/RWHat.jpg" autoplay muted playsinline loop>
+                            <source src="./HappyDogSurfShopPics/RWHat.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-content">
+                            <h2 class="hat">
+                                Running Wild Hat
+                            </h2>
+                            <p>
+                                24.99$
+                            </p>
+                            <a class="shopnow" href="https://www.etsy.com/listing/1752365395/running-wild-hat"
+                                target="_blank" class="button">
+                                Shop Now
+                                <span class="material-symbols-outlined">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <section id="understand-cause">
+            <div class="text">
+                <h2>Our Cause</h2>
+                <p>
+                    Running a shelter involves significant costs for food, water, utilities, and shelter maintenance. As
+                    the number of animals per shelter continues to grow more than 11% for dogs each year, the costs
+                    continue to increase, making it harder to maintain a safe and healthy environment for the animals.
+                    Beyond these daily operations, many shelters offer essential programs and services to connect
+                    potential families with their forever dogs. Adoption programs help reduce the number of strays and
+                    address overpopulation issues. Additionally, educational outreach initiatives raise awareness about
+                    responsible pet ownership and the importance of spaying and neutering, ultimately creating a more
+                    compassionate community.
+                    By supporting these efforts, we can significantly impact the shelter's ability to serve both the
+                    animals in its care and the broader animal-loving community. This holistic approach underscores the
+                    importance to help expand and improve these services.
+                </p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer="
+                            target="_blank">Shop</a></li>
+                    <li><a
+                            href="https://www.gofundme.com/f/help-enhance-our-local-dog-shelters-impact/donate?attribution_id=undefined&utm_campaign=fp_sharesheet&utm_medium=customer&utm_source=website_widget">Donate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto: ppppppp@gmail.com">Happydogsurfshop@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="https://www.etsy.com/listing/1738172544/coastal-classic-double-sided-tee"
+                            target="_blank">Coastal Classic Double Sided Tee</a></li>
+                    <li><a href="https://www.etsy.com/listing/1752365579/coastal-classic-single-sided-tee"
+                            target="_blank">Coastal Classic Single Sided Tee</a></li>
+                    <li><a href="https://www.etsy.com/listing/1752365173/running-wild-blue-tee" target="_blank">Running
+                            Wild Double Sided Tee</a></li>
+                    <li><a href="https://www.etsy.com/listing/1752365395/running-wild-hat" target="_blank">Running Wild
+                            Hat</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/" target="_blank"><i
+                            class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/happydogsurfshop/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

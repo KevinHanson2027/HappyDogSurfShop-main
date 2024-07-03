@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Dog Surf Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="font-awesome.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function toggleMenu() {
+            var dropdown = document.querySelector('.dropdown');
+            var dropdownContainer = document.querySelector('#toggle')
+            dropdown.classList.toggle('open');
+        }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" id="navbar__logo">
+                <img src="./HappyDogSurfShopPics/navpic.png" alt="">
+            </a>
+        </div>
+        <div class="nav-items">
+            <ul class="overview">
+                <div class="overlay-menu" id="toggle">
+                    <li><button class="dropbtn" onclick="toggleMenu()"><i class="fa fa-bars"
+                                aria-hidden="true"></button></i>
+                        <ul class="dropdown">
+                            <li class="dropdown__active dropdown__item"><a class="dropdown__active"
+                                    href="index.html">Home</a></li>
+                            <li class="dropdown__inactive dropdown__item"><a href="team.html">Board</a></li>
+                            <li class="dropdown__inactive dropdown__item"><a href="sponsors.html">Partners</a></li>
+                            <li class="dropdown__inactive dropdown__item"><a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer="
+                                target="_blank">Shop</a></li>
+                            <li><a href="https://gofund.me/4e814aa8" target="_blank" class="donate-button">Donate</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <li class="inactive"><a href="index.html">Home</a></li>
+                <li class="inactive"><a href="team.html">Board</a></li>
+                <li class="active"><a class="active" href="sponsors.html">Partners</a></li>
+                <li class="inactive"><a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer="
+                        target="_blank">Shop</a></li>
+                        <li class="inactive"><a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/" target="_blank"><i
+                            class="fa fa-facebook"></i></a></li>
+                <li class="inactive"><a href="https://www.instagram.com/happydogsurfshop/" target="_blank"><i
+                            class="fa fa-instagram"></i></a></li>
+                <li class="inactive"><a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a></li>
+                <li class="inactive"><a href="https://gofund.me/4e814aa8" target="_blank" class="donate-button">Donate</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <header id="sponsorheader">
+        <img src="./HappyDogSurfShopPics/pic3pt2.png" alt="Happy Dogs Surf Shop">
+    </header>
+
+    <div class="container__sponsor">
+        <div class="about">
+            <h1>Partners</h1>
+        </div>
+        <hr>
+        <div class="container">
+            <section>
+                <a href="https://almosthomeli.org/">
+                    <img class="img__left" src="./HappyDogSurfShopPics/almsothome.jpg" alt="Happy Dogs Surf Shop">
+                </a>
+                <div class="text">
+                    <h2 id="full__text">Almost Home Animal Rescue & Adoption</h2>
+                    <p>Almost Home is an organization comprised of volunteers who rescue and re-home unwanted and
+                        abandoned animals from private homes and shelters, placing them into loving and responsible
+                        homes. They are committed to assisting families with their pet needs, working to prevent
+                        unnecessary surrenders to local shelters. Almost Home strives to improve the quality of life for
+                        animals while fostering a more humane community, and we are excited to partner with them to
+                        support their mission.</p>
+                </div>
+            </section>
+            <section>
+                <div class="text">
+                    <h2 id="full__text">Last Chance Animal Rescue</h2>
+                    <p>Last Chance Animal Rescue, headquartered in Southampton, NY, is a compassionate nonprofit
+                        organization committed to rescuing and rehabilitating animals in need. They rescue pets from
+                        high-risk situations and provide essential medical care, rehabilitation, and behavioral support
+                        to prepare them for adoption into caring, pre-screened homes. Through partnerships with
+                        veterinarians and foster networks, Last Chance Animal Rescue ensures each animal receives the
+                        necessary care until they find their forever family. They rely on community support and
+                        donations to sustain their mission of giving vulnerable animals a second chance at life.</p>
+                    </p>
+                </div>
+                <a href="https://www.lcarescue.org/">
+                    <img class="img__right" src="./HappyDogSurfShopPics/lastchance.jpg" alt="Happy Dogs Surf Shop">
+                </a>
+            </section>
+            <section>
+                <a href="https://www.jewelssafehavenrescueinc.com/">
+                    <img class="img__left" src="./HappyDogSurfShopPics/jewelssafehaven.jpg" alt="Happy Dogs Surf Shop">
+                </a>
+                <div class="text">
+                    <h2 id="full__text">Jules Safe Haven</h2>
+                    <p>Located in Hampton Bays, NY, Jewels Safe Haven Rescue Inc. is dedicated to finding forever homes
+                        for pets in need. They rescue their lovable animals from high-kill shelters and owner
+                        surrenders, striving to assist a wide range of creatures including dogs, cats, birds, reptiles,
+                        and more. As a foster-based rescue, they are always seeking additional foster homes to support
+                        their mission. If you're unable to foster or adopt, please consider donating or spreading the
+                        word about their adoptable pets and rescue efforts to help give a voice to those who need it
+                        most.</p>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="text">
+                    <h2 id="full__text">Hope for Cleo Animal Rescue</h2>
+                    <p>Hope For Cleo Animal Rescue is a nonprofit organization in Smithtown, NY, dedicated to saving
+                        abandoned and homeless animals from high-kill shelter situations. Their primary focus is on
+                        pregnant animals, nursing mothers, and underage orphaned animals who are most at risk in
+                        overpopulated shelters. They provide these animals with veterinary care, rehabilitation, and
+                        loving foster homes until they can find their forever families.</p>
+                    </p>
+                    </p>
+                </div>
+                <a href="https://www.hopeforcleo.com/">
+                    <img class="img__right" src="./HappyDogSurfShopPics/hopeforcleo.jpg" alt="Happy Dogs Surf Shop">
+                </a>
+            </section>
+        </div>
+        <hr>
+        <div class="about">
+            <h1>Sponsors</h1>
+        </div>
+        <hr>
+        <div class="container">
+            <section>
+                <a href="https://www.instagram.com/xchocolate_pandax?igsh=MWY2YWpyaG42aTc4bw==">
+                    <img class="img__left" src="./HappyDogSurfShopPics/chocolatepanda.jpg" alt="Happy Dogs Surf Shop">
+                </a>
+                <div class="text">
+                    <h2 id="full__text">Chocolate Panda</h2>
+                    <p>Chocolate Panda is a local Long Island DJ company that provides music entertainment services for
+                        various events, from weddings and corporate functions to private parties and school dances.
+                        Chocolate Panda is known for their versatile music selection, covering genres from R&B to
+                        electronic
+                        dance music. In addition to their DJ services, they also release their own music on all major
+                        platforms, including Apple Music and Spotify. Chocolate Panda regularly supports local events
+                        and
+                        festivals, contributing to the vibrant Long Island music scene.</p>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="text">
+                    <h2 id="full__text">Starbucks</h2>
+                    <p>Starbucks is a global coffeehouse chain renowned for its high-quality coffee, diverse beverage
+                        options, and welcoming atmosphere. Beyond serving millions of customers daily, Starbucks in
+                        Stony
+                        Brook actively engages in community support, particularly through partnerships with local Long
+                        Island non-profit organizations. The company is committed to promoting a positive social impact,
+                        and
+                        our local shop's dedication to helping animals further reinforces the company's core value of
+                        community connection.</p>
+                    </p>
+                    </p>
+                </div>
+                <a href="https://www.starbucks.com/">
+                    <img class="img__right" src="./HappyDogSurfShopPics/starbucks.jpg" alt="Happy Dogs Surf Shop">
+                </a>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="sponsors.html">Sponsors</a></li>
+                    <li><a href="https://www.etsy.com/shop/happydogssurfshop/?etsrc=sdt&dd_referrer="
+                            target="_blank">Shop</a></li>
+                    <li><a
+                            href="https://www.gofundme.com/f/help-enhance-our-local-dog-shelters-impact/donate?attribution_id=undefined&utm_campaign=fp_sharesheet&utm_medium=customer&utm_source=website_widget">Donate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto: ppppppp@gmail.com">Happydogsurfshop@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="https://www.etsy.com/listing/1738172544/coastal-classic-double-sided-tee"
+                            target="_blank">Coastal Classic Double Sided Tee</a></li>
+                    <li><a href="https://www.etsy.com/listing/1752365579/coastal-classic-single-sided-tee"
+                            target="_blank">Coastal Classic Single Sided Tee</a></li>
+                    <li><a href="https://www.etsy.com/listing/1752365173/running-wild-blue-tee" target="_blank">Running
+                            Wild Double Sided Tee</a></li>
+                    <li><a href="https://www.etsy.com/listing/1752365395/running-wild-hat" target="_blank">Running Wild
+                            Hat</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/Happy-Dogs-Surf-Shop/61560562483105/" target="_blank"><i
+                            class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/happydogsurfshop/" target="_blank"><i class="fa fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/happy-dogs-surf-shop/about/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
