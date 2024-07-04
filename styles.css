@@ -684,6 +684,45 @@ header p {
   }
 }
 
+#partnerheader {
+  background-image: url('./HappyDogSurfShopPics/sponsorbackground.jpg');
+  background-size: cover;
+  color: white;
+  padding: 5em 1em;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+
+  img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 5px;
+  }
+}
+
+.about {
+  text-align: center;
+}
+
+.container__partner {
+  box-shadow: 5px 5px 5px 5px #777;
+  padding: 0.1rem 15px;
+  margin: 3vw 5vw;
+  background-color: #ede6e6;
+  width: 90%;
+  height: auto;
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: #4ea3f8;
+  }
+}
+
 .material-symbols-outlined {
   vertical-align: middle;
 }
@@ -1060,6 +1099,24 @@ footer ul {
 
 }
 
+.container__partner {
+  .container {
+
+    padding: 50px 50px;
+
+    .text {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 25px 50px;
@@ -1179,6 +1236,24 @@ footer ul {
           font-size: 1rem;
           line-height: 1.4rem;
         }
+      }
+    }
+  }
+}
+
+.container__partner {
+  .container {
+
+    padding: 50px 50px;
+
+    .text {
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.4rem;
       }
     }
   }
